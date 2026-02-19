@@ -1,20 +1,69 @@
-/* SEO分析工具 - 样式 */
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f8fafc; }
-.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-.hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 0; text-align: center; }
-.hero h1 { font-size: 3rem; margin-bottom: 20px; }
-.subtitle { font-size: 1.5rem; margin-bottom: 10px; }
-.analyzer-box { background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border-radius: 16px; padding: 30px; max-width: 700px; margin: 40px auto; }
-.input-group { display: flex; gap: 10px; margin-bottom: 15px; }
-.input-group input { flex: 1; padding: 15px 20px; border: none; border-radius: 8px; font-size: 1rem; }
-.btn-primary { background: #10b981; color: white; border: none; padding: 15px 30px; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; }
-.btn-primary:hover { background: #059669; }
-.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; padding: 80px 0; }
-.feature { background: white; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-.pricing { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 60px 0; }
-.pricing-card { background: #f8fafc; border-radius: 16px; padding: 30px; border: 2px solid #e2e8f0; text-align: center; }
-.pricing-card.popular { border-color: #2563eb; background: #eff6ff; }
-.price { font-size: 3rem; font-weight: 700; color: #2563eb; }
-.btn-upgrade { background: #dc2626; color: white; border: none; padding: 15px 40px; border-radius: 8px; font-size: 1.1rem; cursor: pointer; margin-top: 20px; }
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO分析工具 - 网站SEO检测与优化</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f8fafc; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 0; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+        .analyzer-box { background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border-radius: 16px; padding: 30px; max-width: 700px; margin: 40px auto; }
+        .input-group { display: flex; gap: 10px; margin-bottom: 15px; }
+        .input-group input { flex: 1; padding: 15px 20px; border: none; border-radius: 8px; font-size: 1rem; }
+        .btn-primary { background: #10b981; color: white; border: none; padding: 15px 30px; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; padding: 80px 0; }
+        .feature { background: white; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .pricing { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 60px 0; }
+        .pricing-card { background: #f8fafc; border-radius: 16px; padding: 30px; border: 2px solid #e2e8f0; text-align: center; }
+        .pricing-card.popular { border-color: #2563eb; background: #eff6ff; }
+        .price { font-size: 3rem; font-weight: 700; color: #2563eb; }
+        .btn-upgrade { background: #dc2626; color: white; border: none; padding: 15px 40px; border-radius: 8px; font-size: 1.1rem; cursor: pointer; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <h1>网站SEO分析工具</h1>
+            <p style="font-size: 1.5rem; margin-bottom: 10px;">快速检测网站SEO问题，获取专业优化建议</p>
+            <p>输入网址，3秒获取完整SEO分析报告</p>
+            
+            <div class="analyzer-box">
+                <div class="input-group">
+                    <input type="url" placeholder="输入网站地址，例如: https://example.com">
+                    <button class="btn-primary">开始分析</button>
+                </div>
+                <p style="font-size: 0.9rem; opacity: 0.9;">💡 免费版：基础SEO分析 | 付费版：详细报告+优化方案</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="features">
+            <div class="feature">
+                <div style="font-size: 3rem; margin-bottom: 15px;">⚡</div>
+                <h3>3秒快速分析</h3>
+                <p>先进的检测引擎，快速获取完整SEO报告</p>
+            </div>
+            <div class="feature">
+                <div style="font-size: 3rem; margin-bottom: 15px;">📊</div>
+                <h3>专业数据分析</h3>
+                <p>基于Google Lighthouse，50+项指标检测</p>
+            </div>
+            <div class="feature">
+                <div style="font-size: 3rem; margin-bottom: 15px;">💡</div>
+                <h3>可执行建议</h3>
+                <p>不仅发现问题，更提供具体优化方案</p>
+            </div>
+        </div>
+        
+        <div class="pricing">
+            <div class="pricing-card">
+                <h3>免费版</h3>
+                <div class="price" style="font-size: 2rem;">¥0</div>
+                <p>/次</p>
+                <ul style="list-style: none; margin: 20px 0;">
+                    <li>✅ 基础SEO分析</li>
+                    <li>✅ 4项核心指标</li>
